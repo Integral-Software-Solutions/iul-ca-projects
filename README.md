@@ -1,4 +1,4 @@
-# Integral University — BCA Project Showcase (2026–2027)
+# Integral University — BCA & MCA Project Showcase (2027)
 
 **Department of Computer Application · Integral University, Lucknow**  
 **Academic session:** 2026–2027 · **GitHub organization:** Integral-Software-Solutions
@@ -7,10 +7,12 @@
 
 The BCA directory below is populated from the supplied *CA321: Project Lab (2026–27) Team-Wise Project Topic and Guide Allotment List* and the *CA321 Project Lab Team Formation* workbook. The official allotment list contains **152 BCA project teams**. The workbook summary reports **702 BCA students across 152 teams**. Team members and assigned faculty guides are shown on the portal. Student phone numbers, email addresses and enrollment numbers are deliberately not published on this public-facing showcase.
 
+MCA retains 45 configurable slots (Groups A–C, up to 15 teams each); the supplied source files contain no MCA allocation details, so these records remain pending and are not represented as confirmed projects.
 
 ## Repository naming convention
 
 - **BCA:** `BCA2027-<OFFICIAL-PROJECT-ID>-<TEAM-ID>`
+- **MCA:** `MCA2027-<PROJECT-ID>-<TEAM-ID>` (use only after official MCA IDs are allotted)
 
 Repository URLs are left blank until the repositories are verified/created in the Integral-Software-Solutions organization. The portal displays a GitHub link only when `repositoryUrl` is populated.
 
@@ -19,6 +21,7 @@ Repository URLs are left blank until the repositories are verified/created in th
 | Programme | Groups | Allocated teams | Students / slots |
 |---|---:|---:|---:|
 | BCA | A–L (12 groups) | 152 | 702 students (source workbook summary) |
+| MCA | A–C (3 groups) | Pending | 45 placeholder slots |
 
 ### BCA group-wise team counts
 
@@ -251,6 +254,9 @@ Repository URLs are left blank until the repositories are verified/created in th
 | L12 | PUGID26036 | AI-Powered Digital | Mr. Uvais Ahmad | Mohd Aman khan, Vishal Gond, Raiyyan khan, Saif  khan | BCA2027-PUGID26036-L12 |
 | L13 | PUGID26030 | Smart Vehicle Service Management System | Mr. Pankaj Kumar | Pradum Gupta, Sayyed Madeeh Hasan, Chandra Prakash Mani Tripathi, Abu Hanzala | BCA2027-PUGID26030-L13 |
 
+## MCA placeholder directory
+
+MCA project IDs, titles, guides and members must be added after the official MCA allotment is supplied. The existing 45 MCA records in `projects.json` are placeholders only.
 
 ## Files and deployment
 
@@ -259,17 +265,3 @@ Repository URLs are left blank until the repositories are verified/created in th
 - `README.md` — allocation summary and project directory.
 
 For GitHub Pages, Vercel or another static host, publish `index.html` and `data/projects.json` at the expected relative paths. Update project details in `data/projects.json`; the portal reads the JSON at page load. Add verified GitHub repository, demo and live URLs only after confirming they work.
-
-
-## Portal scope
-
-This deployment is intentionally **BCA-only**. It contains 12 class groups (A–L), 152 official project records and a maximum team size of 5. The page uses the Integral University Department of Computer Application logo at `assets/integral-university-logo.png`. The header remains fixed at the top while scrolling.
-
-
-## Latest portal layout update (BCA 2026–2027)
-
-- BCA is the default and only programme displayed.
-- The Programme, Class groups, Project records, and Max per team statistics are displayed inline with “Discover. Explore. Build.”
-- The Integral University / Department of Computer Application logo is served from `assets/integral-university-logo.png`.
-- The university header uses fixed positioning so it remains visible while the page scrolls; responsive top spacing prevents content from being hidden beneath it.
-- Project data is loaded from `data/projects.json`.
